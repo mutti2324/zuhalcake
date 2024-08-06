@@ -1,0 +1,417 @@
+{% load static%}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!-- specify the character encoding for the document: -->
+        <meta charset="UTF-8">
+        <!-- control how the webpage is displayed on different devices and screen sizes: -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- write the title for the tab: --> 
+        <title>The CheeseCake Shop</title>
+        <!-- include external libraries: --> 
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+        <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
+    </head>
+
+    <body>
+
+        <!---------------------------> 
+        <!-- header section starts -->
+        <!-- Tutorial 04:07-11:17 --->
+        <!---------------------------> 
+            <header>
+                <input type="checkbox" name="" id="toggler">
+                <label for="toggler" class="fas fa-bars"></label>
+                <a href="#" class="logo"> <img src="{% static 'logo/example96x96.svg' %}" alt=""> </a>
+                <nav class="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#about">Me</a>
+                    <a href="#products">Products</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+                <!--
+                <div class="icons">
+                    <a href="#" class="fas fa-heart"></a>
+                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-user"></a>
+                </div>
+                -->
+            </header>
+        <!-- header section ends -->
+
+        <!--------------------------> 
+        <!-- home section starts --->
+        <!-- Tutorial 11:17-14:32 -->
+        <!--------------------------> 
+            <section class="home" id="home">
+                <div class="content">
+                    <h3>Homemade Cheese Cake </h3>
+                    <span>Best in Town</span>
+                    <!--
+                    <p>
+                    Lorem ipsum sapientem ne neque dolor erat,eros solet invidunt
+                    duo Quisque aliquid leo. Pretium patrioque sociis eu nihil Cum enim ad,
+                    ipsum alii vidisse justo id.
+                    </p>
+                    -->
+                    <!--
+                    <a href="#" class="btn"> shop now </a>
+                    -->
+                </div>
+            </section>
+        <!-- home section ends ---->
+
+        <!--------------------------> 
+        <!-- about section starts -->
+        <!-- Tutorial 14:32-19:04 -->
+        <!--------------------------> 
+            <section class="about" id="about">
+                <h1 class="heading"> <span> about </span> me </h1>
+                <div class="row">
+                    <!--
+                    <div class="video-container">
+                        <video src="{% static 'images/DemoVideoBake750p.mp4' %}" loop autoplay muted> </video>
+                        <h3>best cakes sellers</h3>
+                    </div>
+                    -->
+                    <div class="content">
+                        <!--
+                        <h3>why choose me?</h3>
+                        -->
+                        <p>
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                        justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est
+                        Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
+                        sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+                        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. 
+                        </p>
+                        <!--
+                        <p> </p>
+                        -->
+                        <!--
+                        <a href="#" class="btn">learn more</a>
+                        -->
+                    </div>
+                </div>
+            </section>
+        <!-- about section ends ---->
+
+        <!--------------------------> 
+        <!-- icons section starts -->
+        <!-- Tutorial 19:04-22:05 -->
+        <!-------------------------->
+            <!--          
+            <section class="icons-container">
+                <div class="icons">
+                    <img src="{% static 'images/right.png' %}" alt="">
+                    <div class="info">
+                        <h3>free delivery</h3>
+                        <span>on all orders</span>
+                    </div>
+                </div>
+                <div class="icons">
+                    <img src="{% static 'images/right.png' %}" alt="">
+                    <div class="info">
+                        <h3>10 days return</h3>
+                        <span>moneyback guarantee</span>
+                    </div>
+                </div>
+                <div class="icons">
+                    <img src="{% static 'images/right.png' %}" alt="">
+                    <div class="info">
+                        <h3>offer & gifts</h3>
+                        <span>on all orders</span>
+                    </div>
+                </div>
+                <div class="icons">
+                    <img src="{% static 'images/right.png' %}" alt="">
+                    <div class="info">
+                        <h3>secure payments</h3>
+                        <span>protected by paypal</span>
+                    </div>
+                </div>
+            </section>
+            -->
+        <!-- icons section ends ---->
+
+        <!-----------------------------> 
+        <!-- products section starts -->
+        <!-- Tutorial 22:05-28:51 ----->
+        <!----------------------------->
+            <section class="products" id="products">
+                <h1 class="heading"> my <span>products</span></h1>
+                <div class="box-container">
+                    <!-- Product 1 -->
+                    <div class="box">
+                        <span class="discount"> -10% </span>
+                        <div class="image">
+                            <img src="{% static 'images/Home-Cake3.jpg' %}" alt="">
+                            <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to cart</a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>cake pot</h3>
+                            <div class="price"> CHF12 <span> CHF15</span></div>
+                        </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="box">
+                        <span class="discount"> -15% </span>
+                        <div class="image">
+                            <img src="{% static 'images/Home-Cake3.jpg' %}" alt="">
+                            <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to cart</a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>cake pot</h3>
+                            <div class="price"> CHF12 <span> CHF15</span></div>
+                        </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="box">
+                        <span class="discount"> -15% </span>
+                        <div class="image">
+                            <img src="{% static 'images/Home-Cake3.jpg' %}" alt="">
+                            <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to cart</a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>cake pot</h3>
+                            <div class="price"> CHF12 <span> CHF15</span></div>
+                        </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="box">
+                        <span class="discount"> -15% </span>
+                        <div class="image">
+                            <img src="{% static 'images/Home-Cake3.jpg' %}" alt="">
+                            <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to cart</a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>cake pot</h3>
+                            <div class="price"> CHF12 <span> CHF15</span></div>
+                        </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="box">
+                        <span class="discount"> -15% </span>
+                        <div class="image">
+                            <img src="{% static 'images/Home-Cake3.jpg' %}" alt="">
+                            <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to cart</a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>cake pot</h3>
+                            <div class="price"> CHF12 <span> CHF15</span></div>
+                        </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="box">
+                        <span class="discount"> -15% </span>
+                        <div class="image">
+                            <img src="{% static 'images/product.jpg' %}" alt="">
+                            <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to cart</a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>cake pot</h3>
+                            <div class="price"> CHF12 <span> CHF15</span></div>
+                        </div>
+                    </div>
+                    <!-- Product 7 -->
+                    <div class="box">
+                        <span class="discount"> -15% </span>
+                        <div class="image">
+                            <img src="{% static 'images/product.jpg' %}" alt="">
+                            <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to cart</a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>cake pot</h3>
+                            <div class="price"> CHF12 <span> CHF15</span></div>
+                        </div>
+                    </div>
+                    <!-- Product 8 -->
+                    <div class="box">
+                        <span class="discount"> -15% </span>
+                        <div class="image">
+                            <img src="{% static 'images/product.jpg' %}" alt="">
+                            <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to cart</a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>cake pot</h3>
+                            <div class="price"> CHF12 <span> CHF15</span></div>
+                        </div>
+                    </div>
+                    <!-- Product 9 -->
+                    <div class="box">
+                        <span class="discount"> -15% </span>
+                        <div class="image">
+                            <img src="{% static 'images/product.jpg' %}" alt="">
+                            <div class="icons">
+                                <a href="#" class="fas fa-heart"></a>
+                                <a href="#" class="cart-btn">add to cart</a>
+                                <a href="#" class="fas fa-share"></a>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>cake pot</h3>
+                            <div class="price"> CHF12 <span> CHF15</span></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        <!-- products section ends ---->
+
+        <!-----------------------------> 
+        <!-- contact section starts --->
+        <!-- Tutorial 33:24-36:22 ----->
+        <!----------------------------->
+            <section class="contact" id="contact">
+                <h1 class="heading"> <span> contact </span> me </h1>
+                <div class="row">
+                    <form action="">
+                        <input type="text" placeholder="name" class="box">
+                        <input type="email" placeholder="email" class="box">
+                        <input type="number" placeholder="number" class="box">
+                        <textarea name="" class="box" placeholder="message" id="" cols="30" rows="10"></textarea>
+                        <input type="submit" placeholder="send message" class="btn">
+                    </form>
+                    <div class="image">
+                        <img src="{% static 'logo/example64x64.svg' %}" alt="">
+                    </div>
+                </div>
+            </section>
+        <!-- contact section ends ------>
+
+        <!-----------------------------> 
+        <!-- review section starts ---->
+        <!-- Tutorial 28:52-33:21 ----->
+        <!----------------------------->
+        <section class="review" id="review">
+            <h1 class="heading"> customer's  <span> review </span></h1>
+            <div class="box-container">
+                <!--Review.1------->
+                <div class="box">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula hendrerit metus,
+                    non gravida mi pulvinar at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia curae; Aenean non rhoncus eros. Donec nec diam ut purus egestas viverra.
+                    Integer vitae ex sit amet nisi lacinia aliquet.
+                    </p>
+                    <div class="user">
+                        <img src="{% static 'images/user-profile-picture1.jpg' %}" alt="">
+                        <div class="user-info">
+                            <h3>John Deo</h3>
+                            <span>happy customer</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+                <!--Review.2------->
+                <div class="box">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula hendrerit metus,
+                    non gravida mi pulvinar at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia curae; Aenean non rhoncus eros. Donec nec diam ut purus egestas viverra.
+                    Integer vitae ex sit amet nisi lacinia aliquet. Proin ut ex vel sapien venenatis venenatis.
+                    Duis vitae semper lacus. Vivamus vestibulum nisi vel urna feugiat, ut pretium sapien scelerisque.
+                    Donec fringilla scelerisque odio, at egestas orci accumsan ut. Nam sit amet massa non dolor
+                    ullamcorper tristique. Sed consectetur enim eu nisi tincidunt fermentum.
+                    </p>
+                    <div class="user">
+                        <img src="{% static 'images/user-profile-picture2.jpg' %}" alt="">
+                        <div class="user-info">
+                            <h3>Luisa Stone</h3>
+                            <span>another happy customer</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+                <!--Review.3------->
+                <div class="box">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula hendrerit metus,
+                    non gravida mi pulvinar at. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia curae; Aenean non rhoncus eros. Donec nec diam ut purus egestas viverra.
+                    Integer vitae ex sit amet nisi lacinia aliquet. Proin ut ex vel sapien venenatis venenatis.
+                    Duis vitae semper lacus. Vivamus vestibulum nisi vel urna feugiat, ut pretium sapien scelerisque.
+                    Donec fringilla scelerisque odio, at egestas orci accumsan ut.
+                    </p>
+                    <div class="user">
+                        <img src="{% static 'images/user-profile-picture3.jpg' %}" alt="">
+                        <div class="user-info">
+                            <h3>Carmen Delor</h3>
+                            <span>and another happy customer</span>
+                        </div>
+                    </div>
+                    <span class="fas fa-quote-right"></span>
+                </div>
+            </div>
+        </section>
+    <!-- review section ends ------>
+
+    <!--HIIIIIIIIIIIIIIIER GEHT ES WEITER video 36:25-->
+
+    <!-----------------------------> 
+    <!-- footer section starts --->
+    <!-- Tutorial 36:25-xx:xx ----->
+    <!----------------------------->
+
+    <!-- footer section ends ------>
+        
+    </body>
+
+</html>
